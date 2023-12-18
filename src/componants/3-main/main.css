@@ -1,0 +1,134 @@
+/*-----------------Content -----------
+1- Left section (button) 
+2- Right section (projects)
+3- mediaquery
+--------------------------------------*/
+
+main.flex{
+  gap: 2.64rem;
+  align-items: start;
+}
+
+/* -------------------- 1- Left section (button)  ----------------- */
+
+main section.left-section{
+ flex-direction: column;
+ gap: 10px;
+}
+
+main section.left-section button{
+background-color: rgba(36, 37, 46, 1);
+width: 10rem;
+padding: 0.75rem 0;
+text-align: center;
+font-size: 1.06rem;
+text-transform: capitalize;
+opacity: 0.5;
+border-radius: 5px;
+}
+
+main section.left-section button:hover{
+  opacity: 1;
+  transition: 0.3s;
+}
+
+main section.left-section button.active{
+  opacity: 1;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  padding: 0.8rem 0;
+  border: 1px solid var(--info);
+}
+
+
+
+
+
+/* -------------------- 2- Right section (projects)  ----------------- */
+
+main section.right-section.flex{
+  /* flex-grow: 1; */
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 2rem;
+  justify-content: center;
+}
+.card{
+  border: 1px solid rgba(93, 188, 252, 0.3) ;
+  border-radius: 5px;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    rgba(255,255,255,0.05),
+    rgba(255,255,255,0.05)
+  );
+}
+.card:hover{
+  border: 1px solid var(--info) ;
+  transition: 0.3s;
+  rotate: 1deg;
+  scale: 1.01;
+ 
+  
+}
+.card img{
+  border-radius: 5px;
+}
+
+.card .box{
+  padding: 1rem 0.rem;
+}
+.card .box .title{
+  color: var(--title);
+}
+
+.card .box .subtitle{
+  color: var(--subtitle);
+  font-size: 0.8rem;
+  margin-top: 0.7rem;
+  margin-bottom: 1.1rem;
+}
+
+.card .box .icons{
+  justify-content: space-between;
+}
+
+.card .icon-github, .card .icon-link{
+  font-size: 1.2rem;
+  color: var(--subtitle);
+}
+
+.card .icon-github:hover, .card .icon-link:hover{
+  font-size: 1.25rem;
+  color: var(--icon-hover);
+  cursor: pointer;
+}
+.card a.link{
+  font-size: 0.9rem;
+  color: var(--info);
+  margin-right: 12px;
+}
+
+
+/* ------------ mediaquery ---------- */
+
+
+@media (max-width: 600px) {
+main.flex{
+  flex-direction: column;
+  gap: 2.64rem;
+  align-items: center;
+}
+
+main section.left-section{
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+ }
+
+ main section.left-section button{
+  width: 7rem;
+  padding: 0.8rem 0;
+  font-size: 0.9rem;
+  }
+}
