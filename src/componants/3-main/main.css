@@ -61,7 +61,7 @@ main section.right-section.flex{
     rgba(255,255,255,0.05),
     rgba(255,255,255,0.05)
   );
-}
+} 
 .card:hover{
   border: 1px solid var(--info) ;
   transition: 0.3s;
