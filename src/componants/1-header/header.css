@@ -44,6 +44,10 @@ header.flex button.menu {
   display: none;
 }
 
+
+header .icon-sun{
+  color: rgb(255, 165, 0);
+}
 /* ------------- 3-  Modal (pop up) -------------- */
 header.flex .fixed {
   position: fixed;

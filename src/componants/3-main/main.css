@@ -40,6 +40,10 @@ main section.left-section button.active{
   border: 1px solid var(--info);
 }
 
+.ligt main section.left-section button.active{
+
+  border: 1px solid #000;
+}
 
 
 
@@ -47,13 +51,14 @@ main section.left-section button.active{
 /* -------------------- 2- Right section (projects)  ----------------- */
 
 main section.right-section.flex{
-  /* flex-grow: 1; */
+  flex-grow: 1;
   flex-wrap: wrap;
   column-gap: 16px;
   row-gap: 2rem;
   justify-content: center;
 }
 .card{
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.17),  1px 1px 1px rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(93, 188, 252, 0.3) ;
   border-radius: 5px;
   border-radius: 5px;
@@ -62,9 +67,13 @@ main section.right-section.flex{
     rgba(255,255,255,0.05)
   );
 } 
+.light .card, .light .card:hover{
+  border:none}
+
 .card:hover{
   border: 1px solid var(--info) ;
-  transition: 0.3s;
+  background-color: rgba(193, 193, 196, 0.3);
+
   rotate: 1deg;
   scale: 1.01;
  
