@@ -1,6 +1,9 @@
-import React from 'react'
+import Lottie from 'lottie-react';
 import './hero.css'
+import devAnimation from '../../../src/animation/developer.json'
+import { useRef } from 'react';
 export default function Hero() {
+  const lottieRef=useRef();
   return (
     <section className='hero flex'>
       <div className='left-section '>
@@ -24,8 +27,11 @@ export default function Hero() {
 
 
 
-      <div className="right-section animation border">
-        left
+      <div className="right-section animation ">
+      <Lottie className='dev-animation' onLoadedImages={()=>{
+          // @ts-ignore
+          lottieRef.current.setSpeed(0.5);
+      }} animationData={devAnimation} style={{ height: '350px' }}/>
       </div>
     </section>
   )
