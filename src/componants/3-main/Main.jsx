@@ -1,22 +1,12 @@
 import { useRef, useState } from "react";
 import "./main.css";
+import { projects } from "./myProjects";
 export default function Main() {
   const [isActiv1, setIsActiv1] = useState("all");
 
-  const projects = [
-    {
-      projectTitle: "react project",
-      category: ["react", "bootstrap"],
-      imgPath: "./project1.jpeg",
-    },
-    {
-      projectTitle: "CSS project",
-      category: ["html", "css"],
-      imgPath: "./project1.jpe",
-    },
-  ];
-
   const [arr, setArr] = useState(projects);
+
+  
   // function for handle filter
   const handelFilter = (pro) => {
     const newArr = projects.filter((project) => project.category.includes(pro));
