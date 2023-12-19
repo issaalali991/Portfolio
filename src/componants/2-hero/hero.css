@@ -61,3 +61,15 @@ section.hero .avater{
 /* --------------------------------------
             Right section (animation)
 -----------------------------------------*/
+
+.animation{
+  width: 100%;
+  translate: 100px 55px;
+}
+
+@media (max-width: 1000px) {
+  section.hero .dev-animation{
+    display: none;
+  }
+ 
+}

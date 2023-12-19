@@ -107,3 +107,10 @@ section.contact-us .submit{
   align-self: center;
 }
 }
+
+@media (max-width: 1000px) {
+  section.contact-us .contact-animation{
+    display: none;
+  }
+ 
+}
