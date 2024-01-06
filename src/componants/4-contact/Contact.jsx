@@ -1,3 +1,4 @@
+
 import React, { useRef, useState } from 'react';
 import './contact.css';
 import emailjs from '@emailjs/browser';
@@ -12,6 +13,7 @@ export default function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
+
     setIsButtonDisabled(true); // Disable the button
 
     emailjs
@@ -38,6 +40,7 @@ export default function Contact() {
       <p className="sub-title">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur labore debitis incidunt assumenda?
       </p>
+
 
       <div style={{justifyContent:'space-between'}} className="flex">
         <form ref={form} action="" onSubmit={sendEmail}>
