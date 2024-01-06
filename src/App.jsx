@@ -5,6 +5,7 @@ import Main from './componants/3-main/Main'
 import Contact from './componants/4-contact/Contact'
 import Footer from './componants/5-footer/Footer'
 import emailjs from '@emailjs/browser';
+import About from './componants/about/About'
 
 function App() {
   const [showscroll,setShowScroll]=useState(false);
@@ -26,6 +27,8 @@ function App() {
     <div id='up' className='container'>
       <Header />
       <Hero />
+      <div className='divider' />
+      <About />
       <div className='divider' />
       <Main />
       <div className='divider' />

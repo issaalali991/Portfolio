@@ -5,9 +5,7 @@
 4- Pesponsive Disign (media Query)
 --------------------------------------*/
 
-
 /* ---------- 1- Header design----------------- */
-
 
 header.flex {
   justify-content: space-between;
@@ -35,7 +33,6 @@ header ul li a:hover {
   font-size: 0.9rem;
 }
 
-
 /* ------------------ 2- Button icon ---------------- */
 header button {
   font-size: 1.2rem;
@@ -44,8 +41,7 @@ header.flex button.menu {
   display: none;
 }
 
-
-header .icon-sun{
+header .icon-sun {
   color: rgb(255, 165, 0);
 }
 /* ------------- 3-  Modal (pop up) -------------- */
@@ -62,10 +58,16 @@ header.flex .fixed {
 }
 
 @keyframes mymove {
-  0%   {scale: 0;}
-  60% {scale: 1.2;}
-  100% {scale: 1;}
-} 
+  0% {
+    scale: 0;
+  }
+  60% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
+}
 
 header.flex .fixed ul.modal {
   animation: mymove 0.7s 1;
@@ -77,16 +79,16 @@ header.flex .fixed ul.modal {
   padding: 1rem 2rem;
   background-color: var(--secondary);
 }
-header.flex .fixed ul.modal li{
+header.flex .fixed ul.modal li {
   border-bottom: 1px solid var(--border);
   padding-bottom: 0.77rem;
   padding-top: 0.5rem;
 }
 
-header.flex .fixed ul.modal li:last-child{
+header.flex .fixed ul.modal li:last-child {
   border-bottom: none;
 }
-header.flex .fixed ul.modal li:first-child{
+header.flex .fixed ul.modal li:first-child {
   text-align: right;
   border: none;
   padding-bottom: 0;
@@ -94,14 +96,13 @@ header.flex .fixed ul.modal li:first-child{
   margin-bottom: -1rem;
 }
 
-header.flex .fixed ul.modal li a{
-  font-size: 1rem ;
+header.flex .fixed ul.modal li a {
+  font-size: 1rem;
 }
 
-
 /* icon */
-header .icon-menu, header button.mode{
-
+header .icon-menu,
+header button.mode {
   background-color: var(--bgheader);
   height: 2.4rem;
   width: 2.4rem;
@@ -111,23 +112,24 @@ header .icon-menu, header button.mode{
   border: 1px solid rgba(244, 165, 96, 0.294);
 }
 
-header .icon-menu:hover, header button.mode:hover{
- border: 1px solid rgba(244, 160, 87);
- color: var(--title);
- 
+header .icon-menu:hover,
+header button.mode:hover {
+  border: 1px solid rgba(244, 160, 87);
+
+  color: var(--title);
+
   cursor: pointer;
 }
-header .icon-cancel{
+header .icon-cancel {
   font-size: 1.5rem;
   color: var(--subtitle);
 }
-header .icon-cancel:hover{
+header .icon-cancel:hover {
   font-size: 1.7rem;
   color: crimson;
   transition: 0.3s;
   rotate: 180deg;
 }
-
 
 /*  ----------------- 4- Pesponsive Disign (media Query) --------------- */
 @media (max-width: 700px) {
@@ -135,6 +137,9 @@ header .icon-cancel:hover{
     display: none;
   }
   header.flex button.menu {
+    display: block;
+  }
+  .lang-mode {
     display: block;
   }
 }
