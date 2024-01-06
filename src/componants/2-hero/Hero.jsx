@@ -1,3 +1,4 @@
+
 import Lottie from "lottie-react";
 import "./hero.css";
 import devAnimation from "../../../src/animation/developer.json";
@@ -8,6 +9,7 @@ export default function Hero() {
   const lottieRef = useRef();
 
   const { t } = useTranslation();
+
   return (
     <section className="hero flex">
       <div className="left-section ">
@@ -47,6 +49,7 @@ export default function Hero() {
           ></a>
         </div>
       </div>
+
 
       <div className="right-section animation ">
         <Lottie
