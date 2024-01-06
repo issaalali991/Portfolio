@@ -1,6 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
+import { useTranslation } from 'react-i18next';
 import "./header.css";
+import LanguageSwitcher from "../../componants/LanguageSwitcher";
+
+
 export default function Header() {
+
+
+
+
   const [showmodal, setShowmodal] = useState(false);
   const [them, setThem] = useState(
     localStorage.getItem("currentMode") ?? "dark"
@@ -14,30 +22,36 @@ export default function Header() {
       document.body.classList.add("dark");
     }
   }, [them]);
+
+  const { t } = useTranslation();
+
+
+
+  
+
   return (
     <header className="flex">
       <button className="menu icon-menu" onClick={() => setShowmodal(true)} />
       <div />
-
+     
       <nav>
         <ul className="flex">
-          <li>
-            <a href="">About</a>
+        <li>
+            <a href="">{t('Home')}</a>
           </li>
           <li>
-            <a href="">Articles</a>
+            <a href="#about">{t('About')}</a>
           </li>
           <li>
-            <a href="">Projects</a>
+            <a href="#projects">{t('Projects')}</a>
           </li>
           <li>
-            <a href="">Speaking</a>
-          </li>
-          <li>
-            <a href="">Contact</a>
+            <a href="#contact">{t('Contact')}</a>
           </li>
         </ul>
       </nav>
+      <div className="flex lang-mode">
+      <LanguageSwitcher  />
       <button
         className="mode"
         onClick={() => {
@@ -51,7 +65,7 @@ export default function Header() {
         }}
       >
         <span className={them=='dark' ?"icon-moon": 'icon-sun'}></span>
-      </button>
+      </button></div>
       {showmodal && (
         <div className="fixed">
           <ul className=" modal">
@@ -62,20 +76,17 @@ export default function Header() {
               />
             </li>
             <li>
-              <a href="">About</a>
-            </li>
-            <li>
-              <a href="">Articles</a>
-            </li>
-            <li>
-              <a href="">Prpjects</a>
-            </li>
-            <li>
-              <a href="">Speaking</a>
-            </li>
-            <li>
-              <a href="">Uses</a>
-            </li>
+            <a href="">{t('Home')}</a>
+          </li>
+          <li>
+            <a href="#about">{t('About')}</a>
+          </li>
+          <li>
+            <a href="#projects">{t('Projects')}</a>
+          </li>
+          <li>
+            <a href="#contact">{t('Contact')}</a>
+          </li>
           </ul>
         </div>
       )}

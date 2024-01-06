@@ -25,7 +25,7 @@ box-sizing: border-box;
   --info: rgb(93,188,255);
   --icon-hover: #d4d4d8;
 
-  --container-padding: 4.8rem;
+  --container-padding:1.5rem 4.8rem;
 
 }
 .light{
@@ -37,6 +37,7 @@ box-sizing: border-box;
   --bgheader:rgb(253,253,253);
   --info: rgb(0,149,246);
   --icon-hover: #333;
+ 
 }
 body{
   background-color: var(--primary);
@@ -46,12 +47,23 @@ body{
 .container{
   border: 2px solid var(--border);
   box-sizing: content-box;
-  width: 80%;
+  /* width: 80%; */
   margin: 0 auto;
   background-color: var(--secondary);
   padding: var(--container-padding);
 }
 
+  .lable{
+    color: var(--subtitle);
+  }
+  select{
+    padding: 2px;
+     
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-right: 10px;
+      background-color: #d4cacae6;
+  }
 .divider{
   
   border-bottom: 1px solid var(--border);

@@ -1,12 +1,12 @@
 import { useRef, useState } from "react";
 import "./main.css";
 import { projects } from "./myProjects";
+import { AnimatePresence, motion } from "framer-motion";
 export default function Main() {
   const [isActiv1, setIsActiv1] = useState("all");
 
   const [arr, setArr] = useState(projects);
 
-  
   // function for handle filter
   const handelFilter = (pro) => {
     const newArr = projects.filter((project) => project.category.includes(pro));
@@ -14,7 +14,7 @@ export default function Main() {
   };
   // -----------------------------
   return (
-    <main className="flex">
+    <main className="flex" id="projects">
       <section className="flex left-section">
         <button
           className={isActiv1 === "all" ? "active" : ""}
@@ -68,34 +68,43 @@ export default function Main() {
       </section>
 
       <section className=" flex right-section ">
-        {arr.map((item) => {
-          return (
-            <article key={item.imgPath} className="card ">
-              <img width={266} src={item.imgPath} alt="" />
-              <div style={{ width: "266px" }} className=" box">
-                <h2 className="title"> {item.projectTitle}</h2>
-                <p className="subtitle">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Inventore eligendi incidunt laborum amet cum a.
-                </p>
-                <div className="flex icons">
-                  <div style={{ gap: "11px" }} className="flex">
-                    <div className="icon-link"></div>
-                    <div className="icon-github"></div>
-                  </div>
+        <AnimatePresence>
+          {arr.map((item) => {
+            return (
+              <motion.article
+                layout
+                initial={{ transform: "scale(0)" }}
+                animate={{ transform: "scale(1)" }}
+                transition={{ duration: 0.5 }}
+                key={item.imgPath}
+                className="card "
+              >
+                <img width={266} src={item.imgPath} alt="" />
+                <div style={{ width: "266px" }} className=" box">
+                  <h2 className="title"> {item.projectTitle}</h2>
+                  <p className="subtitle">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Inventore eligendi incidunt laborum amet cum a.
+                  </p>
+                  <div className="flex icons">
+                    <div style={{ gap: "11px" }} className="flex">
+                      <div className="icon-link"></div>
+                      <div className="icon-github"></div>
+                    </div>
 
-                  <a className="link flex" href="#">
-                    more
-                    <span
-                      style={{ alignSelf: "end" }}
-                      className="icon-arrow-right2"
-                    ></span>
-                  </a>
+                    <a className="link flex" href="#">
+                      more
+                      <span
+                        style={{ alignSelf: "end" }}
+                        className="icon-arrow-right2"
+                      ></span>
+                    </a>
+                  </div>
                 </div>
-              </div>
-            </article>
-          );
-        })}
+              </motion.article>
+            );
+          })}
+        </AnimatePresence>
       </section>
     </main>
   );

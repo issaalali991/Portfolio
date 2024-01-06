@@ -55,7 +55,12 @@ section.contact-us #email:focus,
  border: 1px solid rgb(57, 59, 59);
  
 }
-
+.light section.contact-us label{
+  color: var(--subtitle);
+}
+.light section.contact-us span{
+  color: var(--subtitle);
+}
  section.contact-us #message{
   min-height: 9rem;
   resize: vertical;
@@ -77,6 +82,10 @@ section.contact-us .submit:hover{
   scale: 0.97;
   opacity: 1;
   transition: 0.3s;
+}
+.contact-animation{
+  padding-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 

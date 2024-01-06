@@ -30,7 +30,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="contact-us">
+    <section className="contact-us" id='contact'>
       <h2 className="title">
         <span className="icon-envelop"></span>
         Contact us
@@ -63,7 +63,7 @@ export default function Contact() {
           )}
         </form>
 
-        <div className="animation">
+        <div className="animation ">
         <Lottie className='contact-animation'  animationData={contactAnimation} style={{ height: '350px' }}/>
         </div>
       </div>

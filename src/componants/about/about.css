@@ -1,0 +1,49 @@
+section.about{
+  align-items: start;
+}
+
+section.about .leftSide{
+width: 30%;
+border-right: 1px solid var(--border);
+
+}
+
+.leftSide img{
+  width: 85%;
+  border-radius: 10px;
+}
+
+.leftSide .icons{
+  justify-content: space-around;
+  margin-top: -1.7rem;
+  padding-right: 1rem;
+  color: var(--icon-hover);
+}
+
+.leftSide .icons .icon:hover{
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+/* --------------- RightSide ------------- */
+section.about .rightSide{
+  flex-grow: 1;
+  flex-wrap: wrap;
+  padding-left: 1rem;
+  border-left: 1px solid var(--border);
+}
+
+.rightSide h2, .rightSide h3{
+  color: var(--title);
+}
+ .paragraph{
+  font-size: 0.99rem;
+  color: var(--subtitle);
+}
+
+
+@media (max-width: 1000px) {
+  section.about .leftSide{
+    display: none;
+  }
+ 
+}
