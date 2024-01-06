@@ -65,7 +65,7 @@ body{
       background-color: #d4cacae6;
   }
 .divider{ 
-   
+    
   border-bottom: 1px solid var(--border);
   margin: 3rem 0;
   width: calc(100% + var(--container-padding) + var(--container-padding));
