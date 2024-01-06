@@ -68,7 +68,9 @@ export default function Contact() {
         </form>
 
 
+
         <div className="animation ">
+
 
         <Lottie className='contact-animation'  animationData={contactAnimation} style={{ height: '350px' }}/>
         </div>
