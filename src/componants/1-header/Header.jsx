@@ -79,13 +79,13 @@ export default function Header() {
             <a href="">{t('Home')}</a>
           </li>
           <li>
-            <a href="#about">{t('About')}</a>
+            <a href="#about" onClick={() => setShowmodal(false)}>{t('About')}</a>
           </li>
           <li>
-            <a href="#projects">{t('Projects')}</a>
+            <a href="#projects" onClick={() => setShowmodal(false)}>{t('Projects')}</a>
           </li>
           <li>
-            <a href="#contact">{t('Contact')}</a>
+            <a href="#contact" onClick={() => setShowmodal(false)}>{t('Contact')}</a>
           </li>
           </ul>
         </div>
