@@ -3,7 +3,7 @@ section.about{
 }
 
 section.about .leftSide{
-width: 30%;
+width: 40%;
 border-right: 1px solid var(--border);
 
 }

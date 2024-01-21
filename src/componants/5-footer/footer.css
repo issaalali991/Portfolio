@@ -1,14 +1,14 @@
 
-footer.flex{
+footer{
   justify-content: space-between;
   padding: 1.9rem;
 }
 
-footer.flex ul.flex{
+footer ul.flex{
   gap: 1rem;
 }
 
-footer.flex ul.flex a{
+footer ul.flex a{
   color: var(--subtitle);
   font-size: 0.9rem;
   font-weight: 400;
@@ -27,7 +27,7 @@ footer.flex p{
 
 @media (max-width: 800px) {
 
-  footer.flex{
+  footer{
     flex-direction: column;
     gap: 2rem;
   }

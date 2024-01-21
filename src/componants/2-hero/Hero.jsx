@@ -12,7 +12,7 @@ export default function Hero() {
 
   return (
     <section className="hero flex">
-      <div className="left-section ">
+      <div className="left-section">
         <div className="parent-avater flex">
           <img src="./issa.png" className="avater" alt="" />
           <div className="icon-verified"></div>
@@ -25,11 +25,10 @@ export default function Hero() {
           className="title"
           style={{ minHeight: "51px" }}
         >
-          <b>Issa Alali</b> <br /> Full Stack {t("Developer")}
+          <b>Issa Alali</b> <br/>Junior Full Stack Web {t("Developer")}
         </motion.h1>
         <p className="sub-title">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione in
-          nam dolor quae? Expedita nulla unde, ex esse perspiciatis totam?
+          
         </p>
         <div className="icons flex">
           <a

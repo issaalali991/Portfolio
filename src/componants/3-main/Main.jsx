@@ -65,6 +65,15 @@ export default function Main() {
         >
           Node.js
         </button>
+        <button
+          className={isActiv1 === "java" ? "active" : ""}
+          onClick={() => {
+            setIsActiv1("java");
+            handelFilter("java");
+          }}
+        >
+          Java
+        </button>
       </section>
 
       <section className=" flex right-section ">
@@ -83,8 +92,7 @@ export default function Main() {
                 <div style={{ width: "266px" }} className=" box">
                   <h2 className="title"> {item.projectTitle}</h2>
                   <p className="subtitle">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Inventore eligendi incidunt laborum amet cum a.
+                    {item.description}
                   </p>
                   <div className="flex icons">
                     <div style={{ gap: "11px" }} className="flex">
