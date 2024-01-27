@@ -6,10 +6,10 @@ import Lottie from 'lottie-react';
 import doneAnimation from '../../../src/animation/done.json';
 import contactAnimation from '../../../src/animation/contact-us.json'
 
-import { useTranslation } from 'react-i18next'; // Add this import
+import { useTranslation } from 'react-i18next'; 
 
 export default function Contact() {
-  const { t } = useTranslation(); // Add this line
+  const { t } = useTranslation(); 
 
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
@@ -18,10 +18,10 @@ export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    setIsButtonDisabled(true); // Disable the button
+    setIsButtonDisabled(true); 
 
     emailjs
-      .sendForm('service_o8lv3oa', 'template_of5j7dd', form.current, '4Hm-idbLD3okpEGJW')
+      .sendForm('service_e4douth', 'template_of5j7dd', form.current, '4Hm-idbLD3okpEGJW')
       .then(
         (result) => {
           setIsSubmitted(true);
