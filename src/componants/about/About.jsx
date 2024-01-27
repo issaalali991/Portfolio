@@ -21,7 +21,7 @@ export default function About() {
         <h3>{t('I’m')} Issa Alali <br />
             Junior Full stack {t('Developer')} </h3><br />
             <div className='paragraph'>
-        {t('I’m a 32 year old software enthusiast from Syria currently living in Germany for tow year. I am happily married and have a wonderful son.')} 
+        {t('I’m a 33 year old software enthusiast from Syria currently living in Germany for tow year. I am happily married and have a wonderful son.')} 
         
         <br /> <br />
         <h3>{t('Educational Information:')}</h3> <br />
