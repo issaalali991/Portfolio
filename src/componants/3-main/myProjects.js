@@ -1,7 +1,7 @@
 export const projects = [
   {
     projectTitle: "Shared Traveling project",
-    category: ["react"],
+    category: ["react", "nodejs"],
     imgPath: "./trip.jpg",
     description:'This is a react project. This project is developed using react',
     gitHubLink:'https://github.com/issaalali991/SharedTravelingNew',
