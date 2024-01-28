@@ -96,18 +96,18 @@ export default function Main() {
                   </p>
                   <div className="flex icons">
                     <div style={{ gap: "11px" }} className="flex">
-                      <div className="icon-link"></div>
+                      {/* <div className="icon-link"></div> */}
                       <a className="icon-github" href={item.gitHubLink} target="_blank" rel="noreferrer"
                        ></a>
                     </div>
 
-                    <a className="link flex" href="#">
+                    {/* <a className="link flex" href="#">
                       more
                       <span
                         style={{ alignSelf: "end" }}
                         className="icon-arrow-right2"
                       ></span>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </motion.article>

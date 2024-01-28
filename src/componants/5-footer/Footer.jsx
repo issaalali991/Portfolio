@@ -6,9 +6,9 @@ export default function Footer() {
    <footer className="flex">
     <ul className="flex">
       <li><a href="#about">About</a></li>
-      <li><a href="">Prpjects</a></li>
-      <li><a href="">Speaking</a></li>
-      <li><a href="">Uses</a></li>
+      <li><a href="#projects">Prpjects</a></li>
+      {/* <li><a href="">Speaking</a></li>
+      <li><a href="">Uses</a></li> */}
     </ul>
     <p>&copy; {currentYear} Issa Alali</p>
   </footer>
