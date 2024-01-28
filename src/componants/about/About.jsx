@@ -19,14 +19,14 @@ export default function About() {
       <div className="rightSide ">
         <h2>{t('Greetings!')}</h2>
         <h3>{t('I’m')} Issa Alali <br />
-            Junior Full stack {t('Developer')} </h3><br />
+            Junior Full stack web {t('Developer')} </h3><br />
             <div className='paragraph'>
         {t('I’m a 33 year old software enthusiast from Syria currently living in Germany for tow year. I am happily married and have a wonderful son.')} 
         
         <br /> <br />
         <h3>{t('Educational Information:')}</h3> <br />
 
-        {t('I pursued my interest in information technology and studied computer engineering in Syria from 2008 to 2014, specializing in software.')}
+        {t('I pursued my interest in information technology and studied software engineering in Syria from 2008 to 2014, specializing in software.')}
 
         {t('During this time, I gained a strong foundation in programming.')}
        
