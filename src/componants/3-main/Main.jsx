@@ -87,8 +87,12 @@ export default function Main() {
                 transition={{ duration: 0.5 }}
                 key={item.imgPath}
                 className="card "
+                // style={{ maxHeight: "300px"}}
               >
-                <img width={266} src={item.imgPath} alt="" />
+                <img width={266} src={item.imgPath} 
+                style={{ width: "266px", minHeight: "200px"
+              }}
+                alt="" />
                 <div style={{ width: "266px" }} className=" box">
                   <h2 className="title"> {item.projectTitle}</h2>
                   <p className="subtitle">

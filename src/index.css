@@ -48,7 +48,7 @@ body{
 .container{
   border: 2px solid var(--border);
   box-sizing: content-box;
-  /* width: 80%; */
+  width: 80%;
   margin: 0 auto;
   background-color: var(--secondary);
   padding: var(--container-padding);

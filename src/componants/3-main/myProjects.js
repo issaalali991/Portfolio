@@ -8,7 +8,7 @@ export const projects = [
   },
   {
     projectTitle: "ToDo project",
-    category: ["react"],
+    category: ["react","javascript"],
     imgPath: "./todo.jpg",
     description:'This is a react project. This project is developed using react',
     gitHubLink:'https://github.com/issaalali991/ToDoList',
