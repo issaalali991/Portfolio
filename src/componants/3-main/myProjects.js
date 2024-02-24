@@ -1,5 +1,26 @@
 export const projects = [
   {
+    projectTitle: "Pokefight project",
+    category: ["react", "nodejs","db"],
+    imgPath: "./pokemon.jpg",
+    description:'Pokemon is a application built using the MERN stack (MongoDB, Express.js, React.js, Node.js).',
+    gitHubLink:'https://github.com/issaalali991/pokemon',
+  },
+  {
+    projectTitle: "FundMyCode project",
+    category: ["react", "nodejs","db"],
+    imgPath: "./FundMyCode.jpg",
+    description:'FundMyCode is a crowdfunding application built using the MERN stack (MongoDB, Express.js, React.js, Node.js).',
+    gitHubLink:'https://github.com/issaalali991/crossover2',
+  },
+  {
+    projectTitle: "Management Employee System project",
+    category: ["react", "nodejs","db"],
+    imgPath: "./employee_management.jpg",
+    description:'Employees Management system is a application built using (Postgresql, Express.js, React.js, Node.js).',
+    gitHubLink:'https://github.com/issaalali991/employees_management_system',
+  },
+  {
     projectTitle: "Shared Traveling project",
     category: ["react", "nodejs"],
     imgPath: "./trip.jpg",

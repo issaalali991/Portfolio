@@ -74,6 +74,15 @@ export default function Main() {
         >
           Java
         </button>
+        <button
+          className={isActiv1 === "db" ? "active" : ""}
+          onClick={() => {
+            setIsActiv1("db");
+            handelFilter("db");
+          }}
+        >
+          Database
+        </button>
       </section>
 
       <section className=" flex right-section ">
