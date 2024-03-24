@@ -1,5 +1,3 @@
-
-
 import { color } from "framer-motion";
 import { useTranslation } from "react-i18next";
 

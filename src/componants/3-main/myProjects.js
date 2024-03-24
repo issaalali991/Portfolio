@@ -1,5 +1,11 @@
 export const projects = [
   {
+    projectTitle: "MyEvent project",
+    category: ["react", "nodejs","db"],
+    imgPath: "./myEventjpg",
+    description:'Pokemon is a application built using the MERN stack (MongoDB, Express.js, React.js, Node.js).',
+    gitHubLink:'https://github.com/issaalali991/myEvent',
+  }, {
     projectTitle: "Pokefight project",
     category: ["react", "nodejs","db"],
     imgPath: "./pokemon.jpg",
@@ -28,13 +34,6 @@ export const projects = [
     gitHubLink:'https://github.com/issaalali991/SharedTravelingNew',
   },
   {
-    projectTitle: "ToDo project",
-    category: ["react","javascript"],
-    imgPath: "./todo.jpg",
-    description:'This is a react project. This project is developed using react',
-    gitHubLink:'https://github.com/issaalali991/ToDoList',
-  },
-  {
     projectTitle: "Hacker News project",
     category: ["react"],
     imgPath: "./hackerNews.jpg",
@@ -42,6 +41,14 @@ export const projects = [
     gitHubLink:'https://github.com/issaalali991/HackerNews',
 
   },
+  {
+    projectTitle: "ToDo project",
+    category: ["react","javascript"],
+    imgPath: "./todo.jpg",
+    description:'This is a react project. This project is developed using react',
+    gitHubLink:'https://github.com/issaalali991/ToDoList',
+  },
+  
   {
     projectTitle: "Blog project",
     category: ["html", "css"],
