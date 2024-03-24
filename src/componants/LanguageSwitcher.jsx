@@ -11,9 +11,11 @@ const LanguageSwitcher = () => {
 
   return (
     <div>
-      <label className="lable">{t("Select Language:")} </label>
+      {/* <label className="lable">{t("Select Language:")} </label> */}
 
-      <select onChange={(e) => changeLanguage(e.target.value)}>
+      <select onChange={(e) => changeLanguage(e.target.value)}
+      className=" bg-gray-200 text-gray-800 rounded-md p-1 m-1"
+      >
         <option key="en" value="en">
           EN
         </option>
