@@ -36,6 +36,7 @@ export default function Contact() {
 
   return (
     <section className="contact-us" id='contact'>
+      
       <h2 className="title">
         <span className="icon-envelop"></span>
         {t('Contact us')}
