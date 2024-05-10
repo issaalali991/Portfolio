@@ -112,7 +112,7 @@ export default function Main() {
                       {/* <div className="icon-link"></div> */}
                       <a className="icon-github" href={item.gitHubLink} target="_blank" rel="noreferrer"
                        ></a>
-                    </div>
+                    </div>  
 
                     {/* <a className="link flex" href="#">
                       more

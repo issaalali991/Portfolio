@@ -3,7 +3,39 @@ export const projects = [
     projectTitle: "MyEvent project",
     category: ["react", "nodejs","db"],
     imgPath: "./myEvent.jpg",
-    description:'MyEvent is a application built using the MERN stack (MongoDB, Express.js, React.js, Node.js).',
+    description:'MyEvent is a application built using the MERN stack (MongoDB, Express.js, React.js, ++++++++++++++++++++++++++++++++++
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      +++++++++++++++++++++++++++++++++++.js).',
     gitHubLink:'https://github.com/issaalali991/myEvent',
   }, {
     projectTitle: "Pokefight project",
