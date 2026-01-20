@@ -8,17 +8,17 @@ footer ul.flex{
   gap: 1rem;
 }
 
-footer ul.flex a{
+footer ul.flex a {
   color: var(--subtitle);
   font-size: 0.9rem;
   font-weight: 400;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-footer.flex ul.flex a:hover{
+footer.flex ul.flex a:hover {
   color: var(--info);
-  font-size: 1rem;
   font-weight: 500;
-
+  transform: translateY(-2px);
 }
 
 footer.flex p{

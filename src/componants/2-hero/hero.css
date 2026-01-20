@@ -53,12 +53,12 @@ section.hero .left-section p.sub-title {
 section.hero .icons a {
   font-size: 1.3rem;
   margin-right: 1.5rem;
-
   color: var(--subtitle);
+  transition: transform 0.3s ease, color 0.3s ease;
 }
+
 section.hero .icons .icon:hover {
-  font-size: 1.4rem;
-  transition: 0.3s;
+  transform: scale(1.15);
   cursor: pointer;
   color: var(--icon-hover);
 }

@@ -1,4 +1,3 @@
-import { color } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 const LanguageSwitcher = () => {
@@ -7,7 +6,6 @@ const LanguageSwitcher = () => {
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
-  const { t } = useTranslation();
 
   return (
     <div>

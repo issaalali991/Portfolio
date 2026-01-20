@@ -1,12 +1,11 @@
 
-import React, { useRef, useState } from 'react';
-import './contact.css';
-import emailjs from '@emailjs/browser';
-import Lottie from 'lottie-react';
-import doneAnimation from '../../../src/animation/done.json';
-import contactAnimation from '../../../src/animation/contact-us.json'
-
-import { useTranslation } from 'react-i18next'; 
+import { useRef, useState } from "react";
+import "./contact.css";
+import emailjs from "@emailjs/browser";
+import Lottie from "lottie-react";
+import doneAnimation from "../../animation/done.json";
+import contactAnimation from "../../animation/contact-us.json";
+import { useTranslation } from "react-i18next"; 
 
 export default function Contact() {
   const { t } = useTranslation(); 

@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import "./main.css";
 import { projects } from "./myProjects";
 import { AnimatePresence, motion } from "framer-motion";

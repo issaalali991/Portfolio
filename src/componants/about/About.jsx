@@ -1,17 +1,34 @@
-import  './about.css';
+import "./about.css";
 import { useTranslation } from "react-i18next";
-import React from 'react'
 
 export default function About() {
   const { t } = useTranslation();
   return (
-    <section className='about flex' id='about'>
-      <div className="leftSide ">
-          <img src="./me.jpg" alt="" />
-          <div className="icons flex">
-          <a className="icon icon-envelop" href='mailto:issa.alali.991@gmail.com' target="_blank"></a>
-          <a className="icon icon-github" href='https://github.com/issaalali991' target="_blank"></a>
-          <a className="icon icon-linkedin2" href='https://www.linkedin.com/in/isali91/' target="_blank"></a>
+    <section className="about flex" id="about" aria-label="About section">
+      <div className="leftSide">
+        <img src="./me.jpg" alt="Issa Alali Photo" />
+        <div className="icons flex">
+          <a
+            className="icon icon-envelop"
+            href="mailto:issa.alali.991@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Send Email"
+          ></a>
+          <a
+            className="icon icon-github"
+            href="https://github.com/issaalali991"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub Profile"
+          ></a>
+          <a
+            className="icon icon-linkedin2"
+            href="https://www.linkedin.com/in/isali91/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn Profile"
+          ></a>
         </div>
       </div>
 
